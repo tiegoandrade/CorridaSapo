@@ -84,6 +84,7 @@ public class Sapo extends Thread {
 	 * Faz o sapo pular. 
 	 */
 	private void pular() {
+		
 		// A distância do pulo um número randômico entre 0 e "DISTANCIA_MAXIMA".
 		ultimoPulo = (int) (Math.random() * DISTANCIA_MAXIMA);
 		
@@ -106,7 +107,7 @@ public class Sapo extends Thread {
 		
 		try {
 			
-			// Faz o sapo dormir por um determinado período de tempo.
+			// Faz o sapo descansar por um determinado período de tempo.
 			Thread.sleep(tempo);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
